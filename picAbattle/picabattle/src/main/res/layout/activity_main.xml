@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pager"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.xjobb.scardfeud.AppSettings" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/pizza"
+        android:id="@+id/pizza"/>
+    </RelativeLayout>
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="Zoom"
+        android:textSize="25dp"
+        android:id="@+id/zoom_btn"/>
+
+
+
+
+
+</LinearLayout>

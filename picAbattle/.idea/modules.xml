@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/picAbattle.iml" filepath="$PROJECT_DIR$/picAbattle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/picabattle/picabattle.iml" filepath="$PROJECT_DIR$/picabattle/picabattle.iml" />
+    </modules>
+  </component>
+</project>
+
