@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
-    android:fillAfter="true" >
+    android:fillAfter="true"
+    android:interpolator="@android:anim/linear_interpolator" >
 
     <scale
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -12,5 +13,15 @@
         android:toXScale="300"
         android:toYScale="300" >
     </scale>
+
+    <!-- Rotate 180 degrees -->
+    <rotate
+        android:duration="5000"
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatCount="5"
+        android:repeatMode="restart"
+        android:toDegrees="360" />
 
 </set>

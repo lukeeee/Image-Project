@@ -6,27 +6,109 @@
     android:layout_height="match_parent"
     tools:context="se.xjobb.scardfeud.AppSettings" >
 
-    <RelativeLayout
+    <SeekBar
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_gravity="center"
         android:gravity="center">
 
-    <ImageView
-        android:layout_marginTop="20dp"
-        android:layout_width="10dp"
-        android:layout_height="10dp"
-        android:background="@drawable/pizza"
-        android:id="@+id/pizza"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/pizza"
+            android:id="@+id/zoomIn"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/pizza"
+            android:id="@+id/zoomSpin"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/pizza"
+            android:id="@+id/zoomOut"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/pizza"
+            android:id="@+id/fadeIn"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/pizza"
+            android:id="@+id/blink"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/pizza"
+            android:id="@+id/bounce"/>
     </RelativeLayout>
-    <Button
-        android:layout_marginTop="30dp"
-        android:layout_height="wrap_content"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:text="Zoom"
-        android:textSize="25dp"
-        android:id="@+id/zoom_btn"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Zoom In"
+            android:textSize="25dp"
+            android:id="@+id/zoomIn_btn"/>
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="115dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Zoom Out"
+            android:textSize="25dp"
+            android:id="@+id/zoomOut_btn"/>
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="250dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Fade In"
+            android:textSize="25dp"
+            android:id="@+id/fadeIn_btn"/>
+        <Button
+            android:layout_marginTop="80dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Zoom Spin"
+            android:textSize="25dp"
+            android:id="@+id/zoomSpin_btn"/>
+        <Button
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="155dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Blink"
+            android:textSize="25dp"
+            android:id="@+id/blink_btn"/>
+        <Button
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="245dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Bounce"
+            android:textSize="25dp"
+            android:id="@+id/bounce_btn"/>
+    </RelativeLayout>
 
 
 

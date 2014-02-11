@@ -1,6 +1,7 @@
 package se.app.picabattle;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,19 +12,46 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class MainActivity extends Activity implements View.OnClickListener {
-    ImageView pizza;
-    Animation zoom;
-    Button zoomBtn;
+    ImageView zoomIn,zoomOut,fadeIn,zoomSpin,blink,bounce;
+    Animation zoom_In,zoom_out, fade_In,zoom_spin,Blink,Bounce;
+    Button zoomIn_Btn, zoomOut_Btn, fadeIn_Btn, zoomSpin_btn, blink_btn,bounce_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        pizza = (ImageView)findViewById(R.id.pizza);
-        zoomBtn = (Button)findViewById(R.id.zoom_btn);
-        zoom = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.zoom_in));
+        zoomIn = (ImageView)findViewById(R.id.zoomIn);
+        zoomOut = (ImageView)findViewById(R.id.zoomOut);
+        fadeIn = (ImageView)findViewById(R.id.fadeIn);
+        zoomSpin = (ImageView)findViewById(R.id.zoomSpin);
+        blink = (ImageView)findViewById(R.id.blink);
+        bounce = (ImageView)findViewById(R.id.bounce);
+        zoomIn_Btn = (Button)findViewById(R.id.zoomIn_btn);
+        zoomOut_Btn = (Button)findViewById(R.id.zoomOut_btn);
+        fadeIn_Btn = (Button)findViewById(R.id.fadeIn_btn);
+        zoomSpin_btn = (Button)findViewById(R.id.zoomSpin_btn);
+        blink_btn = (Button)findViewById(R.id.blink_btn);
+        bounce_btn = (Button)findViewById(R.id.bounce_btn);
+        zoom_In = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.zoom_in));
+        zoom_out = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.zoom_out));
+        fade_In = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.fade_in));
+        zoom_spin = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.zoom_spin));
+        Blink = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.blink));
+        Bounce = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.bounce));
+        zoomIn.setVisibility(View.INVISIBLE);
+        zoomOut.setVisibility(View.INVISIBLE);
+        fadeIn.setVisibility(View.INVISIBLE);
+        zoomSpin.setVisibility(View.INVISIBLE);
+        blink.setVisibility(View.INVISIBLE);
+        bounce.setVisibility(View.INVISIBLE);
 
-        zoomBtn.setOnClickListener(this);
+
+        zoomIn_Btn.setOnClickListener(this);
+        zoomOut_Btn.setOnClickListener(this);
+        fadeIn_Btn.setOnClickListener(this);
+        zoomSpin_btn.setOnClickListener(this);
+        blink_btn.setOnClickListener(this);
+        bounce_btn.setOnClickListener(this);
 
 
     }
@@ -43,16 +71,39 @@ public class MainActivity extends Activity implements View.OnClickListener {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_refresh) {
+            Intent i = new Intent(this, MainActivity.class);
+            finish();
+            startActivity(i);
         }
         return super.onOptionsItemSelected(item);
     }
 
     @Override
     public void onClick(View view) {
-        if(view == zoomBtn){
-            pizza.startAnimation(zoom);
+        if(view == zoomIn_Btn){
+            zoomIn.setVisibility(View.VISIBLE);
+            zoomIn.startAnimation(zoom_In);
+
+        } else if(view == zoomOut_Btn){
+            zoomOut.setVisibility(View.VISIBLE);
+            zoomOut.startAnimation(zoom_out);
+
+        } else if(view == fadeIn_Btn){
+            fadeIn.setVisibility(View.VISIBLE);
+            fadeIn.startAnimation(fade_In);
+
+        } else if(view == zoomSpin_btn){
+            zoomSpin.setVisibility(View.VISIBLE);
+            zoomSpin.startAnimation(zoom_spin);
+
+        } else if(view == blink_btn){
+            blink.setVisibility(View.VISIBLE);
+            blink.startAnimation(Blink);
+
+        } else if(view == bounce_btn){
+            bounce.setVisibility(View.VISIBLE);
+            bounce.startAnimation(Bounce);
 
         }
     }
