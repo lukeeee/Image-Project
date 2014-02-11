@@ -52,12 +52,21 @@
             android:background="@drawable/pizza"
             android:id="@+id/bounce"/>
     </RelativeLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="FreeDigitalPhotos.net || Foto by Suat Eman"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:id="@+id/picTag"/>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
         <Button
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
@@ -65,7 +74,7 @@
             android:textSize="25dp"
             android:id="@+id/zoomIn_btn"/>
         <Button
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="115dp"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -74,7 +83,7 @@
             android:textSize="25dp"
             android:id="@+id/zoomOut_btn"/>
         <Button
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="250dp"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"

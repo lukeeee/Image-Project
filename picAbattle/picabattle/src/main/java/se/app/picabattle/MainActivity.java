@@ -10,11 +10,13 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends Activity implements View.OnClickListener {
     ImageView zoomIn,zoomOut,fadeIn,zoomSpin,blink,bounce;
     Animation zoom_In,zoom_out, fade_In,zoom_spin,Blink,Bounce;
     Button zoomIn_Btn, zoomOut_Btn, fadeIn_Btn, zoomSpin_btn, blink_btn,bounce_btn;
+    TextView picTag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         zoomSpin_btn = (Button)findViewById(R.id.zoomSpin_btn);
         blink_btn = (Button)findViewById(R.id.blink_btn);
         bounce_btn = (Button)findViewById(R.id.bounce_btn);
+        picTag = (TextView)findViewById(R.id.picTag);
         zoom_In = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.zoom_in));
         zoom_out = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.zoom_out));
         fade_In = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.fade_in));
@@ -44,6 +47,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         zoomSpin.setVisibility(View.INVISIBLE);
         blink.setVisibility(View.INVISIBLE);
         bounce.setVisibility(View.INVISIBLE);
+        picTag.setVisibility(View.INVISIBLE);
 
 
         zoomIn_Btn.setOnClickListener(this);
@@ -84,26 +88,32 @@ public class MainActivity extends Activity implements View.OnClickListener {
         if(view == zoomIn_Btn){
             zoomIn.setVisibility(View.VISIBLE);
             zoomIn.startAnimation(zoom_In);
+            picTag.setVisibility(View.VISIBLE);
 
         } else if(view == zoomOut_Btn){
             zoomOut.setVisibility(View.VISIBLE);
             zoomOut.startAnimation(zoom_out);
+            picTag.setVisibility(View.VISIBLE);
 
         } else if(view == fadeIn_Btn){
             fadeIn.setVisibility(View.VISIBLE);
             fadeIn.startAnimation(fade_In);
+            picTag.setVisibility(View.VISIBLE);
 
         } else if(view == zoomSpin_btn){
             zoomSpin.setVisibility(View.VISIBLE);
             zoomSpin.startAnimation(zoom_spin);
+            picTag.setVisibility(View.VISIBLE);
 
         } else if(view == blink_btn){
             blink.setVisibility(View.VISIBLE);
             blink.startAnimation(Blink);
+            picTag.setVisibility(View.VISIBLE);
 
         } else if(view == bounce_btn){
             bounce.setVisibility(View.VISIBLE);
             bounce.startAnimation(Bounce);
+            picTag.setVisibility(View.VISIBLE);
 
         }
     }
