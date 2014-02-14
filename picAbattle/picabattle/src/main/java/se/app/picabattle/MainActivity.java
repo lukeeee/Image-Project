@@ -86,9 +86,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         if(view == zoomIn_Btn){
-            zoomIn.setVisibility(View.VISIBLE);
-            zoomIn.startAnimation(zoom_In);
-            picTag.setVisibility(View.VISIBLE);
+            Intent i = new Intent(getApplicationContext(), Game.class);
+            startActivity(i);
 
         } else if(view == zoomOut_Btn){
             zoomOut.setVisibility(View.VISIBLE);
