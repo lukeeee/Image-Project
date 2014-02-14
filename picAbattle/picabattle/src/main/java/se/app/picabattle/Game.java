@@ -49,6 +49,10 @@ public class Game extends Activity implements View.OnClickListener {
         question.setVisibility(View.INVISIBLE);
         picTag.setVisibility(View.INVISIBLE);
         clicked.setVisibility(View.INVISIBLE);
+        first_btn.setVisibility(View.INVISIBLE);
+        sec_btn.setVisibility(View.INVISIBLE);
+        third_btn.setVisibility(View.INVISIBLE);
+        fourth_btn.setVisibility(View.INVISIBLE);
 
 
 
@@ -109,6 +113,10 @@ public class Game extends Activity implements View.OnClickListener {
             clicked.setVisibility(View.VISIBLE);
 
         } else if(view == start){
+            first_btn.setVisibility(View.VISIBLE);
+            sec_btn.setVisibility(View.VISIBLE);
+            third_btn.setVisibility(View.VISIBLE);
+            fourth_btn.setVisibility(View.VISIBLE);
             start.setVisibility(View.INVISIBLE);
             picTag.setVisibility(View.VISIBLE);
             question.setVisibility(View.VISIBLE);
