@@ -10,6 +10,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by Lukas on 2014-02-14.
@@ -86,6 +87,7 @@ public class Game extends Activity implements View.OnClickListener {
             fourth_btn.setBackgroundResource(wrong[0]);
             imageView.setVisibility(View.INVISIBLE);
             clicked.setVisibility(View.VISIBLE);
+            Toast.makeText(this, "Rätt grattis", 1000).show();
 
 
         } else if (view == sec_btn){
@@ -95,6 +97,7 @@ public class Game extends Activity implements View.OnClickListener {
             fourth_btn.setBackgroundResource(wrong[0]);
             imageView.setVisibility(View.INVISIBLE);
             clicked.setVisibility(View.VISIBLE);
+            Toast.makeText(this, "Fel tyvärr", 1000).show();
 
         } else if (view == third_btn){
             first_btn.setBackgroundResource(right[0]);
@@ -103,6 +106,7 @@ public class Game extends Activity implements View.OnClickListener {
             fourth_btn.setBackgroundResource(wrong[0]);
             imageView.setVisibility(View.INVISIBLE);
             clicked.setVisibility(View.VISIBLE);
+            Toast.makeText(this, "Fel tyvärr", 1000).show();
 
         } else if (view == fourth_btn){
             first_btn.setBackgroundResource(right[0]);
@@ -111,6 +115,7 @@ public class Game extends Activity implements View.OnClickListener {
             fourth_btn.setBackgroundResource(wrong[0]);
             imageView.setVisibility(View.INVISIBLE);
             clicked.setVisibility(View.VISIBLE);
+            Toast.makeText(this, "Fel tyvärr", 1000).show();
 
         } else if(view == start){
             first_btn.setVisibility(View.VISIBLE);
