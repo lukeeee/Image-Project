@@ -7,10 +7,6 @@
     android:background="#ccc"
     tools:context="se.xjobb.scardfeud.AppSettings" >
 
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <RelativeLayout
         android:layout_marginTop="50dp"
         android:layout_width="300dp"
@@ -42,11 +38,6 @@
             android:layout_height="300dp"
             android:background="@drawable/pizza"
             android:id="@+id/fadeIn"/>
-        <ImageView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:background="@drawable/pizza"
-            android:id="@+id/blink"/>
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
@@ -100,15 +91,6 @@
             android:text="Zoom Spin"
             android:textSize="25dp"
             android:id="@+id/zoomSpin_btn"/>
-        <Button
-            android:layout_marginTop="80dp"
-            android:layout_marginLeft="155dp"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center"
-            android:text="Blink"
-            android:textSize="25dp"
-            android:id="@+id/blink_btn"/>
         <Button
             android:layout_marginTop="80dp"
             android:layout_marginLeft="245dp"

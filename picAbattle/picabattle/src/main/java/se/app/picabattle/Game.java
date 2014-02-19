@@ -23,7 +23,7 @@ public class Game extends Activity implements View.OnClickListener {
     TextView picTag, question,start;
     int[] right = new int[] {R.drawable.btn_right};
     int[] wrong = new int[] {R.drawable.btn_wrong};
-    Animation m_left,m_right,Image,bounce;
+    Animation m_left,m_right,Image,bounce,blink;
     SeekBar time;
     private int progressStatus = 300;
 
@@ -47,6 +47,7 @@ public class Game extends Activity implements View.OnClickListener {
         m_left = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.move_left));
         m_right = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.move_right));
         bounce = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.bounce));
+        blink = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.blink));
 
         first_btn.setOnClickListener(this);
         sec_btn.setOnClickListener(this);
@@ -88,12 +89,14 @@ public class Game extends Activity implements View.OnClickListener {
     public void onClick(View view) {
         if(view == first_btn){
             first_btn.setBackgroundResource(right[0]);
+            first_btn.startAnimation(blink);
             sec_btn.setBackgroundResource(wrong[0]);
             third_btn.setBackgroundResource(wrong[0]);
             fourth_btn.setBackgroundResource(wrong[0]);
             imageView.setVisibility(View.INVISIBLE);
             clicked.setVisibility(View.VISIBLE);
             Toast.makeText(this, "Rätt grattis", 1000).show();
+            time.setVisibility(View.INVISIBLE);
 
 
         } else if (view == sec_btn){
@@ -126,12 +129,14 @@ public class Game extends Activity implements View.OnClickListener {
     }
     public void wrong(){
         first_btn.setBackgroundResource(right[0]);
+        first_btn.startAnimation(blink);
         sec_btn.setBackgroundResource(wrong[0]);
         third_btn.setBackgroundResource(wrong[0]);
         fourth_btn.setBackgroundResource(wrong[0]);
         imageView.setVisibility(View.INVISIBLE);
         clicked.setVisibility(View.VISIBLE);
         Toast.makeText(this, "Fel tyvärr", 1000).show();
+        time.setVisibility(View.INVISIBLE);
     }
     public void countDown(){
         new MyCountDown(30000, 1000).start();
@@ -148,6 +153,7 @@ public class Game extends Activity implements View.OnClickListener {
         public void onFinish() {
             question.setText("Tiden är Slut");
             first_btn.setBackgroundResource(right[0]);
+            first_btn.startAnimation(blink);
             sec_btn.setBackgroundResource(wrong[0]);
             third_btn.setBackgroundResource(wrong[0]);
             fourth_btn.setBackgroundResource(wrong[0]);

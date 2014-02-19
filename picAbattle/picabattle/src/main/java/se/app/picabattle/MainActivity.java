@@ -26,26 +26,22 @@ public class MainActivity extends Activity implements View.OnClickListener {
         zoomOut = (ImageView)findViewById(R.id.zoomOut);
         fadeIn = (ImageView)findViewById(R.id.fadeIn);
         zoomSpin = (ImageView)findViewById(R.id.zoomSpin);
-        blink = (ImageView)findViewById(R.id.blink);
         bounce = (ImageView)findViewById(R.id.bounce);
         zoomIn_Btn = (Button)findViewById(R.id.zoomIn_btn);
         zoomOut_Btn = (Button)findViewById(R.id.zoomOut_btn);
         fadeIn_Btn = (Button)findViewById(R.id.fadeIn_btn);
         zoomSpin_btn = (Button)findViewById(R.id.zoomSpin_btn);
-        blink_btn = (Button)findViewById(R.id.blink_btn);
         bounce_btn = (Button)findViewById(R.id.bounce_btn);
         picTag = (TextView)findViewById(R.id.picTag);
         zoom_In = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.zoom_in));
         zoom_out = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.zoom_out));
         fade_In = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.fade_in));
         zoom_spin = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.zoom_spin));
-        Blink = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.blink));
         Bounce = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.bouncing));
         zoomIn.setVisibility(View.INVISIBLE);
         zoomOut.setVisibility(View.INVISIBLE);
         fadeIn.setVisibility(View.INVISIBLE);
         zoomSpin.setVisibility(View.INVISIBLE);
-        blink.setVisibility(View.INVISIBLE);
         bounce.setVisibility(View.INVISIBLE);
         picTag.setVisibility(View.INVISIBLE);
 
@@ -54,7 +50,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         zoomOut_Btn.setOnClickListener(this);
         fadeIn_Btn.setOnClickListener(this);
         zoomSpin_btn.setOnClickListener(this);
-        blink_btn.setOnClickListener(this);
         bounce_btn.setOnClickListener(this);
 
 
@@ -102,11 +97,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         } else if(view == zoomSpin_btn){
             zoomSpin.setVisibility(View.VISIBLE);
             zoomSpin.startAnimation(zoom_spin);
-            picTag.setVisibility(View.VISIBLE);
-
-        } else if(view == blink_btn){
-            blink.setVisibility(View.VISIBLE);
-            blink.startAnimation(Blink);
             picTag.setVisibility(View.VISIBLE);
 
         } else if(view == bounce_btn){
