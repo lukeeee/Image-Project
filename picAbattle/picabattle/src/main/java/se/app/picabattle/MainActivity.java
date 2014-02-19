@@ -40,7 +40,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         fade_In = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.fade_in));
         zoom_spin = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.zoom_spin));
         Blink = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.blink));
-        Bounce = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.bounce));
+        Bounce = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.bouncing));
         zoomIn.setVisibility(View.INVISIBLE);
         zoomOut.setVisibility(View.INVISIBLE);
         fadeIn.setVisibility(View.INVISIBLE);
