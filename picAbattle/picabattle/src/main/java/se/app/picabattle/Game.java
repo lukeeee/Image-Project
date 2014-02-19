@@ -20,12 +20,11 @@ import android.widget.Toast;
 public class Game extends Activity implements View.OnClickListener {
     private ImageView imageView,clicked;
     private Button first_btn,sec_btn,third_btn,fourth_btn;
-    TextView picTag, question,start;
+    TextView picTag, question,start,cDown;
     int[] right = new int[] {R.drawable.btn_right};
     int[] wrong = new int[] {R.drawable.btn_wrong};
     Animation m_left,m_right,Image,bounce,blink;
     SeekBar time;
-    private int progressStatus = 300;
 
 
     @Override
@@ -42,6 +41,7 @@ public class Game extends Activity implements View.OnClickListener {
         start = (TextView)findViewById(R.id.start);
         clicked = (ImageView)findViewById(R.id.clicked);
         time = (SeekBar)findViewById(R.id.time);
+        cDown = (TextView)findViewById(R.id.cDown);
 
         Image = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.zoom_in));
         m_left = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.move_left));
@@ -159,11 +159,14 @@ public class Game extends Activity implements View.OnClickListener {
             fourth_btn.setBackgroundResource(wrong[0]);
             imageView.setVisibility(View.INVISIBLE);
             clicked.setVisibility(View.VISIBLE);
+            cDown.setVisibility(View.INVISIBLE);
+            time.setVisibility(View.INVISIBLE);
         }
 
         @Override
         public void onTick(long millisUntilFinished) {
             long timeRemaining = millisUntilFinished;
+            cDown.setText("   " + millisUntilFinished / 1000);
             time.setProgress((int) (timeRemaining));
         }
 
