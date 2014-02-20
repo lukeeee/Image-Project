@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
+    android:background="@drawable/background"
     tools:context="se.app.picabattle.Game" >
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -14,12 +14,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/time"/>
     <TextView
-        android:layout_width="40dp"
+        android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:textColor="#000"
         android:layout_marginTop="5dp"
+        android:gravity="center"
         android:layout_marginLeft="170dp"
-        android:paddingRight="5dp"
         android:id="@+id/cDown"
         android:background="@drawable/btn"/>
     </RelativeLayout>

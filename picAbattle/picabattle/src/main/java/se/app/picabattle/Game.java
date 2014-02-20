@@ -63,6 +63,8 @@ public class Game extends Activity implements View.OnClickListener {
         sec_btn.setVisibility(View.INVISIBLE);
         third_btn.setVisibility(View.INVISIBLE);
         fourth_btn.setVisibility(View.INVISIBLE);
+        time.setVisibility(View.INVISIBLE);
+        cDown.setVisibility(View.INVISIBLE);
 
     }
 
@@ -97,6 +99,7 @@ public class Game extends Activity implements View.OnClickListener {
             clicked.setVisibility(View.VISIBLE);
             Toast.makeText(this, "Rätt grattis", 1000).show();
             time.setVisibility(View.INVISIBLE);
+            cDown.setVisibility(View.INVISIBLE);
 
 
         } else if (view == sec_btn){
@@ -110,6 +113,8 @@ public class Game extends Activity implements View.OnClickListener {
 
         } else if(view == start){
             countDown();
+            time.setVisibility(View.VISIBLE);
+            cDown.setVisibility(View.VISIBLE);
             first_btn.setVisibility(View.VISIBLE);
             first_btn.startAnimation(m_right);
             sec_btn.setVisibility(View.VISIBLE);
@@ -137,6 +142,7 @@ public class Game extends Activity implements View.OnClickListener {
         clicked.setVisibility(View.VISIBLE);
         Toast.makeText(this, "Fel tyvärr", 1000).show();
         time.setVisibility(View.INVISIBLE);
+        cDown.setVisibility(View.INVISIBLE);
     }
     public void countDown(){
         new MyCountDown(30000, 1000).start();
@@ -166,7 +172,7 @@ public class Game extends Activity implements View.OnClickListener {
         @Override
         public void onTick(long millisUntilFinished) {
             long timeRemaining = millisUntilFinished;
-            cDown.setText("   " + millisUntilFinished / 1000);
+            cDown.setText("" + millisUntilFinished / 1000);
             time.setProgress((int) (timeRemaining));
         }
 
