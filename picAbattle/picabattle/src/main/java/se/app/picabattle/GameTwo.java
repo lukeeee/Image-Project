@@ -103,9 +103,12 @@ public class GameTwo extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         if(view == first_btn){
-            first_btn.setBackgroundResource(right[0]);
-            first_btn.startAnimation(blink);
-            sec_btn.setBackgroundResource(wrong[0]);
+            wrong();
+
+        } else if (view == sec_btn){
+            sec_btn.setBackgroundResource(right[0]);
+            sec_btn.startAnimation(blink);
+            first_btn.setBackgroundResource(wrong[0]);
             third_btn.setBackgroundResource(wrong[0]);
             fourth_btn.setBackgroundResource(wrong[0]);
             imageView.setVisibility(View.INVISIBLE);
@@ -117,9 +120,6 @@ public class GameTwo extends Activity implements View.OnClickListener {
             next.startAnimation(move_in);
             arrow.setVisibility(View.VISIBLE);
             arrow.startAnimation(move_in);
-
-        } else if (view == sec_btn){
-            wrong();
 
         } else if (view == third_btn){
             wrong();
@@ -159,9 +159,9 @@ public class GameTwo extends Activity implements View.OnClickListener {
         }
     }
     public void wrong(){
-        first_btn.setBackgroundResource(right[0]);
-        first_btn.startAnimation(blink);
-        sec_btn.setBackgroundResource(wrong[0]);
+        sec_btn.setBackgroundResource(right[0]);
+        sec_btn.startAnimation(blink);
+        first_btn.setBackgroundResource(wrong[0]);
         third_btn.setBackgroundResource(wrong[0]);
         fourth_btn.setBackgroundResource(wrong[0]);
         imageView.setVisibility(View.INVISIBLE);
@@ -188,9 +188,9 @@ public class GameTwo extends Activity implements View.OnClickListener {
         @Override
         public void onFinish() {
             //question.setText(R.string.timeout);
-            first_btn.setBackgroundResource(right[0]);
-            first_btn.startAnimation(blink);
-            sec_btn.setBackgroundResource(wrong[0]);
+            sec_btn.setBackgroundResource(right[0]);
+            sec_btn.startAnimation(blink);
+            first_btn.setBackgroundResource(wrong[0]);
             third_btn.setBackgroundResource(wrong[0]);
             fourth_btn.setBackgroundResource(wrong[0]);
             imageView.setVisibility(View.INVISIBLE);
