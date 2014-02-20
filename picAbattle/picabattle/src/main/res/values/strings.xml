@@ -4,5 +4,31 @@
     <string name="app_name">pic\'Abattle</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_refresh">Refresh</string>
+    <string name="new_game">Start A New Game</string>
+    <string name="your_turn">Your Turn</string>
+    <string name="waiting">Waiting</string>
+    <string name="finished">Finished</string>
+    <string name="ready">Are you Ready?\n\nTap to Start</string>
+    <string name="timeout">Time is up</string>
+    <string name="toast_right">Right Congratulations</string>
+    <string name="toast_wrong">Sorry your Wrong</string>
+    <string name="btn_next">Move On</string>
+    <string name="round_one">Round 1</string>
+    <string name="round_two">Round 2</string>
+    <string name="round_three">Round 3</string>
+    <string name="round_four">Round 4</string>
+    <string name="round_five">Round 5</string>
+    <string name="round_six">Round 6</string>
+    <string name="round_seven">Round 7</string>
+    <string name="play">Play</string>
+    <string name="friend">Add Friend</string>
+
+
+
+    <string name="question">Whats on the Pizza?</string>
+    <string name="btn_1">Broccoli, Paprika, Olives</string>
+    <string name="btn_2">Pineapple, Ham, Paprika</string>
+    <string name="btn_3">Salami, Tomatoes, Broccoli</string>
+    <string name="btn_4">Kebab, Sauce, Onions</string>
 
 </resources>

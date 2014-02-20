@@ -17,9 +17,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- * Created by Lukas on 2014-02-14.
+ * Created by Lukas on 2014-02-20.
  */
-public class Game extends Activity implements View.OnClickListener {
+public class GameTwo extends Activity implements View.OnClickListener {
     private ImageView imageView,clicked,arrow;
     private Button first_btn,sec_btn,third_btn,fourth_btn,next;
     TextView picTag, question,start,cDown;
@@ -34,7 +34,7 @@ public class Game extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.game_layout);
+        setContentView(R.layout.game_two);
         imageView = (ImageView)findViewById(R.id.imageView);
         first_btn = (Button)findViewById(R.id.first_btn);
         sec_btn = (Button)findViewById(R.id.sec_btn);
@@ -49,7 +49,7 @@ public class Game extends Activity implements View.OnClickListener {
         cDown = (TextView)findViewById(R.id.cDown);
         arrow = (ImageView)findViewById(R.id.arrow);
 
-        Image = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.zoom_in));
+        Image = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.fade_in));
         m_left = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.move_left));
         m_right = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.move_right));
         bounce = AnimationUtils.loadAnimation(getApplicationContext(),(R.anim.bounce));
@@ -216,5 +216,3 @@ public class Game extends Activity implements View.OnClickListener {
 
     }
 }
-
-

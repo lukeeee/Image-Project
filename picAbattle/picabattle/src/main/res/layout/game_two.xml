@@ -5,30 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="se.app.picabattle.Game" >
+    tools:context="se.app.picabattle.GameTwo" >
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/time"/>
-    <TextView
-        android:layout_width="30dp"
-        android:layout_height="wrap_content"
-        android:textColor="#000"
-        android:layout_marginTop="5dp"
-        android:gravity="center"
-        android:layout_marginLeft="170dp"
-        android:id="@+id/cDown"
-        android:background="@drawable/btn"/>
-        </RelativeLayout>
-
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"/>
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_marginLeft="170dp"
+            android:id="@+id/cDown"
+            android:background="@drawable/btn"/>
+    </RelativeLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/question"
+        android:text="Vilket land är det?"
         android:id="@+id/question"
         android:textColor="#fff"
         android:textSize="25sp"/>
@@ -41,16 +40,14 @@
         android:gravity="center">
 
         <ImageView
-            android:layout_width="1dp"
-            android:layout_height="1dp"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="150dp"
-            android:background="@drawable/pizza"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:background="@drawable/bg"
             android:id="@+id/imageView"/>
         <ImageView
             android:layout_width="280dp"
             android:layout_height="280dp"
-            android:background="@drawable/pizza"
+            android:background="@drawable/bg"
             android:id="@+id/clicked"/>
         <TextView
             android:layout_width="300dp"
@@ -84,7 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="FreeDigitalPhotos.net || Foto by Suat Eman"
+        android:text="www.nordicfactory.com"
         android:textSize="16dp"
         android:layout_gravity="center"
         android:textColor="#fff"
@@ -100,7 +97,7 @@
             android:layout_width="170dp"
             android:background="@drawable/btn"
             android:layout_gravity="center"
-            android:text="@string/btn_1"
+            android:text="Italien"
             android:textSize="15dp"
             android:id="@+id/first_btn"/>
         <Button
@@ -110,7 +107,7 @@
             android:layout_width="170dp"
             android:background="@drawable/btn"
             android:layout_gravity="center"
-            android:text="@string/btn_2"
+            android:text="Bulgarien"
             android:textSize="15dp"
             android:id="@+id/sec_btn"/>
         <Button
@@ -120,7 +117,7 @@
             android:layout_width="170dp"
             android:background="@drawable/btn"
             android:layout_gravity="center"
-            android:text="@string/btn_4"
+            android:text="Ungern"
             android:textSize="15dp"
             android:id="@+id/fourth_btn"/>
         <Button
@@ -129,7 +126,7 @@
             android:layout_width="170dp"
             android:layout_gravity="center"
             android:background="@drawable/btn"
-            android:text="@string/btn_3"
+            android:text="Iran"
             android:textSize="15dp"
             android:id="@+id/third_btn"/>
 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">pic\'Abattle</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="new_game">Starta ett Nytt Spel</string>
+    <string name="your_turn">Din Tur</string>
+    <string name="waiting">Väntar</string>
+    <string name="finished">Avslutade</string>
+    <string name="ready">Är du beredd?\n\nKlicka för att börja</string>
+    <string name="timeout">Tiden är Slut</string>
+    <string name="toast_right">Rätt Grattis</string>
+    <string name="toast_wrong">Fel Tyvärr</string>
+    <string name="btn_next">Gå Vidare</string>
+    <string name="round_one">Runda 1</string>
+    <string name="round_two">Runda 2</string>
+    <string name="round_three">Runda 3</string>
+    <string name="round_four">Runda 4</string>
+    <string name="round_five">Runda 5</string>
+    <string name="round_six">Runda 6</string>
+    <string name="round_seven">Runda 7</string>
+    <string name="play">Spela</string>
+    <string name="friend">Lägg till Vän</string>
+
+
+
+
+    <string name="question">Vad är det på Pizzan?</string>
+    <string name="btn_1">Broccoli, Paprika, Oliver</string>
+    <string name="btn_2">Ananas, Skinka, Paprika</string>
+    <string name="btn_3">Salami, Tomater, Broccoli</string>
+    <string name="btn_4">Kebab, Sås, Lök</string>
+
+</resources>

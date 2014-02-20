@@ -55,7 +55,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         if(view == zoomIn_Btn){
-            Intent i = new Intent(getApplicationContext(), Game.class);
+            Intent i = new Intent(getApplicationContext(), ScoreBoard.class);
             startActivity(i);
         }
 }
