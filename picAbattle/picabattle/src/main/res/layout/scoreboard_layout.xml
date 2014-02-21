@@ -17,7 +17,8 @@
         android:text="You vs Opponent"
         android:textStyle="bold"
         android:gravity="center"
-        android:textSize="25dp"/>
+        android:textSize="25dp"
+        android:alpha="0.5"/>
 
     <TextView
         android:layout_width="220dp"
@@ -28,7 +29,8 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
-        android:text="@string/round_one"/>
+        android:text="@string/round_one"
+        android:alpha="0.5"/>
     <TextView
         android:layout_width="230dp"
         android:layout_height="45dp"
@@ -38,7 +40,8 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_marginTop="5dp"
-        android:text="@string/round_two"/>
+        android:text="@string/round_two"
+        android:alpha="0.5"/>
     <TextView
         android:layout_width="240dp"
         android:layout_height="45dp"
@@ -48,7 +51,8 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_marginTop="5dp"
-        android:text="@string/round_three"/>
+        android:text="@string/round_three"
+        android:alpha="0.5"/>
     <TextView
         android:layout_width="250dp"
         android:layout_height="45dp"
@@ -58,7 +62,8 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_marginTop="5dp"
-        android:text="@string/round_four"/>
+        android:text="@string/round_four"
+        android:alpha="0.5"/>
     <TextView
         android:layout_width="260dp"
         android:layout_height="45dp"
@@ -68,7 +73,8 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_marginTop="5dp"
-        android:text="@string/round_five"/>
+        android:text="@string/round_five"
+        android:alpha="0.5"/>
     <TextView
         android:layout_width="270dp"
         android:layout_height="45dp"
@@ -78,7 +84,8 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_marginTop="5dp"
-        android:text="@string/round_six"/>
+        android:text="@string/round_six"
+        android:alpha="0.5"/>
     <TextView
         android:layout_width="280dp"
         android:layout_height="45dp"
@@ -88,32 +95,46 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_marginTop="5dp"
-        android:text="@string/round_seven"/>
+        android:text="@string/round_seven"
+        android:alpha="0.5"/>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center">
         <Button
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:layout_marginLeft="155dp"
-            android:background="@drawable/btn_newgame"
+            android:layout_marginLeft="85dp"
+            android:background="@drawable/btn_green"
             android:text="game debug 2"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:id="@+id/play"/>
+            android:id="@+id/play"
+            android:alpha="0.5"/>
         <Button
-            android:layout_width="150dp"
+            android:layout_width="75dp"
             android:layout_height="60dp"
-            android:background="@drawable/btn"
+            android:background="@drawable/btn_yellow"
             android:text="game debug 1"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textStyle="bold"
-            android:id="@+id/friend"/>
+            android:id="@+id/friend"
+            android:alpha="0.5"/>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_red"
+            android:text="game debug 3"
+            android:textSize="15dp"
+            android:layout_marginLeft="245dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:id="@+id/give_up"
+            android:alpha="0.5"/>
         </RelativeLayout>
 
 

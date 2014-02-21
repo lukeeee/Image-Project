@@ -35,8 +35,9 @@
                     android:paddingRight="40dp"
                     android:gravity="center"
                     android:textStyle="bold"
-                    android:background="@drawable/btn_user"
-                    android:id="@+id/user"/>
+                    android:background="@drawable/txt_user"
+                    android:id="@+id/user"
+                    android:alpha="0.5"/>
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -49,10 +50,11 @@
                     android:layout_height="90dp"
                     android:text="@string/new_game"
                     android:textSize="25sp"
-                    android:background="@drawable/btn_newgame"
+                    android:background="@drawable/btn_green"
                     android:textStyle="bold"
                     android:paddingRight="60dp"
-                    android:id="@+id/Btn_newGame"/>
+                    android:id="@+id/Btn_newGame"
+                    android:alpha="0.5"/>
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -75,9 +77,10 @@
                     android:paddingRight="20dp"
                     android:layout_marginLeft="10dp"
                     android:textStyle="bold"
-                    android:background="@drawable/btn_game"
+                    android:background="@drawable/txt_game"
                     android:id="@+id/games_text"
-                    android:textColor="#000"/>
+                    android:textColor="#000"
+                    android:alpha="0.5"/>
             </RelativeLayout>
 
             <LinearLayout
@@ -103,8 +106,9 @@
                     android:paddingRight="29dp"
                     android:layout_marginLeft="10dp"
                     android:textStyle="bold"
-                    android:background="@drawable/btn_wait"
+                    android:background="@drawable/txt_wait"
                     android:id="@+id/waiting_text"
+                    android:alpha="0.5"
                     android:textColor="#000"/>
             </RelativeLayout>
             <LinearLayout
@@ -129,9 +133,10 @@
                     android:paddingRight="25dp"
                     android:layout_marginLeft="10dp"
                     android:textStyle="bold"
-                    android:background="@drawable/btn_fin"
+                    android:background="@drawable/txt_fin"
                     android:id="@+id/fin_game_text"
-                    android:textColor="#000"/>
+                    android:textColor="#fff"
+                    android:alpha="0.5"/>
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="300dp"
@@ -153,7 +158,8 @@
                 android:paddingRight="10dp"
                 android:textSize="25sp"
                 android:background="@drawable/btn"
-                android:id="@+id/zoomIn_btn"/>
+                android:id="@+id/zoomIn_btn"
+                android:alpha="0.5"/>
 
 
 

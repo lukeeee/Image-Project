@@ -17,7 +17,7 @@
             android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:textColor="#000"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="4dp"
             android:gravity="center"
             android:layout_marginLeft="170dp"
             android:id="@+id/cDown"
@@ -67,14 +67,16 @@
             android:layout_marginTop="110dp"
             android:textSize="25dp"
             android:text="@string/btn_next"
-            android:id="@+id/btn_next"/>
+            android:id="@+id/btn_next"
+            android:alpha="0.5"/>
         <ImageView
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_marginTop="130dp"
             android:background="@drawable/arrow_game"
             android:layout_marginLeft="190dp"
-            android:id="@+id/arrow"/>
+            android:id="@+id/arrow"
+            android:alpha="0.5"/>
     </RelativeLayout>
     <TextView
         android:layout_marginTop="5dp"
@@ -99,7 +101,8 @@
             android:layout_gravity="center"
             android:text="Italien"
             android:textSize="15dp"
-            android:id="@+id/first_btn"/>
+            android:id="@+id/first_btn"
+            android:alpha="0.5"/>
         <Button
             android:layout_marginTop="10dp"
             android:layout_marginLeft="175dp"
@@ -109,7 +112,8 @@
             android:layout_gravity="center"
             android:text="Bulgarien"
             android:textSize="15dp"
-            android:id="@+id/sec_btn"/>
+            android:id="@+id/sec_btn"
+            android:alpha="0.5"/>
         <Button
             android:layout_marginTop="95dp"
             android:layout_marginLeft="175dp"
@@ -119,7 +123,8 @@
             android:layout_gravity="center"
             android:text="Ungern"
             android:textSize="15dp"
-            android:id="@+id/fourth_btn"/>
+            android:id="@+id/fourth_btn"
+            android:alpha="0.5"/>
         <Button
             android:layout_marginTop="95dp"
             android:layout_height="80dp"
@@ -128,7 +133,8 @@
             android:background="@drawable/btn"
             android:text="Iran"
             android:textSize="15dp"
-            android:id="@+id/third_btn"/>
+            android:id="@+id/third_btn"
+            android:alpha="0.5"/>
 
     </RelativeLayout>
 
